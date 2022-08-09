@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Auth from './Auth/Auth';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [authenticated, setAuthenticated] = useState(false);
+
+  useEffect(() => {
+    // TODO: handle refresh token and auth token
+  }, []);
 
   return (
     <div className="App">
